@@ -28,6 +28,7 @@ if( isset($_COOKIE['CookieHinweis']) ) {
 
         <div class="row flex-column" style="top:20px;position:absolute;">
             <h1>Abalo</h1>
+            <div id="nav"></div>
             <h5>Deine Plattform um gebrauchte Produkte zu kaufen und verkaufen.</h5>
         </div>
         <div class="row" style="top:50%;position:absolute;">
@@ -38,6 +39,39 @@ if( isset($_COOKIE['CookieHinweis']) ) {
             Copyright by Toni Kevo, Mona Eden
         </div>
     </div>
+
+    <script>
+
+        var navigation = [
+            ['Home'],
+            ['Kategorien'],
+            ['Verkaufen'],
+            ['Unternehmen', "Philosophie", "Karriere"],
+        ];
+
+        var nav = document.createElement('ul');
+
+        for(let key in navigation) {
+            var node = document.createElement("li");
+
+            for (let i= 0; i < navigation[key].length; i++) {
+                if(i == 0) {
+                    var textnode = document.createTextNode(navigation[key][i]);
+                    node.appendChild(textnode);
+                }
+                else {
+                    var nav2 = document.createElement("ul");
+                    var node2 = document.createElement("li");
+                    var textnode2 = document.createTextNode(navigation[key][i]);
+                    node2.appendChild(textnode2);
+                    nav2.appendChild(node2);
+                    node.appendChild(nav2);
+                }
+            }
+            nav.appendChild(node);
+        }
+        document.getElementById("nav").appendChild(nav);
+    </script>
 
     </body>
 </html>
