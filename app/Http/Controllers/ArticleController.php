@@ -18,7 +18,7 @@ class ArticleController extends Controller
     public function index(Request $request)
     {
         $articles = $this->getArticles($request);
-        return view('articles')->with('articles', $articles);
+        return view('articles', ['articles' => $articles]);
     }
 
     /**
@@ -27,12 +27,12 @@ class ArticleController extends Controller
     public function getArticles(Request $request){
         $name = $request->query('search');
         if($name){
-
             $articles = DB::table('ab_article')
                 ->whereRaw("UPPER(ab_name) LIKE UPPER('%$name%')")
                 ->get();
 
         }else{
+
             $articles = AbArticle::all();
         }
         return $articles;

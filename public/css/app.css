@@ -51,6 +51,46 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
+#cookie-popup {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8000;
+  line-height: 20px;
+}
+.cookie-popup-inner {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  position: absolute;
+  z-index: 9000;
+  max-width: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #3f9ae5;
+}
+.cookie-popup-inner button {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #000;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
 article,
 aside,
 figcaption,

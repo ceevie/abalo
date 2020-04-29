@@ -39,15 +39,9 @@
                     <div class="article_name">{{$article->ab_name}}</div>
                 </div>
             @endforeach
-
-
         </div>
-
-
     </div>
 </div>
 
-
-</div>
 </body>
 </html>

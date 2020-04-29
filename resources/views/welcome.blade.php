@@ -1,3 +1,11 @@
+<?php
+if( isset($_COOKIE['CookieHinweis']) ) {
+    $showPopup = false;
+} else {
+    $showPopup = true;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -10,8 +18,11 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/css/app.css">
 
+        <script type="text/javascript" src="js/cookiecheck.js"></script>
+
     </head>
     <body>
+    <?php include ('../resources/views/cookie.php'); ?>
 
     <div class="container" style="height:auto;width:100%;">
 
@@ -27,7 +38,6 @@
             Copyright by Toni Kevo, Mona Eden
         </div>
     </div>
-
 
     </body>
 </html>

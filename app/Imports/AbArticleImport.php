@@ -32,7 +32,7 @@ class AbArticleImport implements ToCollection, WithCustomCsvSettings
     public function getCsvSettings(): array
     {
         return [
-            'input_encoding' => 'ISO-8859-1',
+            'input_encoding' => 'UTF-8',
             'delimiter' => ';'
         ];
     }
