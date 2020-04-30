@@ -29,7 +29,8 @@ if( isset($_COOKIE['CookieHinweis']) ) {
         <div class="row flex-column" style="top:20px;position:absolute;">
             <h1>Abalo</h1>
             <div id="nav"></div>
-            <h5>Deine Plattform um gebrauchte Produkte zu kaufen und verkaufen.</h5>
+            <div id="ajax"></div>
+                <h5>Deine Plattform um gebrauchte Produkte zu kaufen und verkaufen.</h5>
         </div>
         <div class="row" style="top:50%;position:absolute;">
             <h5>Abalo ist eine Plattform bei der Sie ihre gebrauchten Produkte verkaufen können. Alternativ können Sie gebrauchte Produkte kaufen</h5>
@@ -41,6 +42,19 @@ if( isset($_COOKIE['CookieHinweis']) ) {
     </div>
 
     <script>
+        "use strict";
+        function loadJSON() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "static/message.json");
+            xhr.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    let obj = JSON.parse(this.responseText);
+                    document.getElementById("ajax").innerHTML = "Ausgabe aus JSON: " + obj['message'];
+                }
+            };
+            xhr.send();
+        }
+        loadJSON();
 
         var navigation = [
             ['Home'],
