@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h3>Kontrollstrukturen</h3>
+       
+       <script type="text/javascript"> 
+        "use strict";
+       // das kurze Beispiele der Verwendung von
+       // Kontrollstrukturen if-elseif-else, switch, for, while, do..while zeigt.
+
+       let input = "Fall3";
+       let y;
+
+       if (input == "Fall1") {
+        y = 1;
+        } else if (input == "Fall2") {
+        y = 2;
+        } else {
+        y = 3;
+    }
+        console.log("if-elseif-else Fall" + y)
+
+        input = "Fall2";
+
+        switch (input) {
+        case "Fall1":
+        console.log("switch: Fall1");
+        break;
+        case "Fall2":
+        console.log("switch: Fall2");
+        case "Fall3":
+        console.log("switch: Fall3");
+        break;
+        }
+        
+        console.log("while-Schleife:");
+        let k = 3;
+        while (k > 0) {
+        k--;
+        console.log(k);
+        }
+
+        console.log("for-Schleife:");
+        for (let i = 0; i < 3; ++i) {
+            console.log(i);
+        }
+
+        console.log("do-while-Schleife:");
+        let l = 4;
+        do {
+            l--;
+            console.log(l);
+            } while (l > 0);
+
+    
+        </script>
+
+    </body>
+</html>

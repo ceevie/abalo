@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h3>Mouseover</h3>
+        <div onmouseout="myOutFunction()" onmouseover="myOverFunction()" id="elem" style="background-color: red; height: 30px; width: 30px;"> </div>
+        <script>
+        
+        "use strict";
+        function myOverFunction() {
+            document.getElementById("elem").style.backgroundColor = "green";
+        }
+
+        function myOutFunction() {
+            document.getElementById("elem").style.backgroundColor = "white";
+        }
+        
+        </script>
+    </body>
+</html>

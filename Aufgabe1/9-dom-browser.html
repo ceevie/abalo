@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        
+        <h3>Dom-Browser</h3>
+       
+       <script type="text/javascript"> 
+       "use strict";
+
+       var userAgent = window.navigator.userAgent;
+       userAgent = reverse(userAgent);
+            var name ="";
+            var start = userAgent.indexOf("/") + 1;
+            var ende = userAgent.indexOf(" ");
+            if (ende == -1) {
+            ende = userAgent.length;
+            }
+            name = userAgent.substring(start, ende);
+            var browsername = reverse(name);
+
+       console.log(browsername);
+    
+       function reverse(to_reverse){
+            return to_reverse.split("").reverse().join("");
+        }
+        
+        </script>
+
+    </body>
+</html>

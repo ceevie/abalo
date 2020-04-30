@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        
+        <h3>Dom-Get</h3>
+
+        <h1> Beispielüberschrift1 mit tag=h1 </h1>
+        <h2 id="ueberschrift2"> Beispielüberschrift2 mit id=ueberschrift2 </h1>
+        <p class="rot">Textabschnitt1 mit class="rot"</p>
+        <p name="gruen"> Textabschnitt2 mit name="gruen"</p>
+
+        <p id="elem1"></p> 
+        <p id="elem2"></p> 
+    
+       
+       <script type="text/javascript"> 
+       "use strict";
+       document.getElementsByTagName("h1")[0].style.backgroundColor= "lightblue";
+            document.getElementById('ueberschrift2').style.color = "blue";
+            document.getElementsByClassName("rot")[0].style.color = "red";
+            document.getElementsByName("gruen")[0].style.color = "green";
+            document.getElementById('elem1').innerHTML = '<div>InnerHtml</div>';
+            document.getElementById('elem2').innerText = '<div>innerText</div>';
+        </script>
+
+    </body>
+</html>

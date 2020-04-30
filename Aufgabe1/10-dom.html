@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aufgabe 10 - DOM</title>
+    </head>
+    <body>
+        
+        <h3>Dom</h3>
+       
+       <script type="text/javascript"> 
+       "use strict";
+
+       var title = document.title;
+       console.log("Titel: " +title);
+
+       var darstellungsbereichWidth = window.innerWidth;
+       var darstellungsbereichHeight = window.innerHeight;
+       console.log("Darstellungsbreich: Width: " + darstellungsbereichWidth + " Height: " + darstellungsbereichHeight);
+
+       var url = document.URL;
+       console.log("aktuelle URL: " + url);
+
+       var cookie = document.cookie=encodeURIComponent("username=Mona; expires=Thu, 25 April 2020 12:00:00 UTC; path=/");
+       console.log("Cookie: " + cookie);
+
+        </script>
+
+    </body>
+</html>

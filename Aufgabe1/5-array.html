@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h3>Array</h3>
+       
+       <script type="text/javascript"> 
+        "use strict";
+
+        var arr = ["erstes", "zweites", 3, 4];
+
+        console.log("3 verschiedene Ausgaben");
+        for(let i = 0; i < arr.length; i++) {
+            console.log(i + ' => ' + arr[i]);
+        }
+
+        arr.forEach(function(value, index) {
+        console.log(index + ' => ' + value);
+        });
+
+        let j = 0;
+        for(const el of arr) {
+        console.log(j++, ' => ', el);
+        }
+
+        console.log("push");
+        arr.push("fünftes");
+        arr.push(6);
+
+        arr.forEach(function(value, index) {
+        console.log(index + ' => ' + value);
+        });
+
+
+        console.log("pop");
+        arr.pop();
+        arr.forEach(function(value, index) {
+        console.log(index + ' => ' + value);
+        });
+
+
+        console.log("zweite Stelle verändern");
+        arr[1] = 2;
+        arr.forEach(function(value, index) {
+        console.log(index + ' => ' + value);
+        });
+
+        console.log("Arrayn unsortiert");
+        var sortieren = [5, 3, 6, 1, 2, 4];
+        sortieren.forEach(function(value, index) {
+        console.log(value);
+        });
+
+        sortieren.sort(function(a, b) {
+            return a > b;
+        });
+        console.log("sortiert:");
+        for(let key in sortieren) {
+        let value = sortieren[key];
+        console.log(value);
+        }
+
+        var finden = sortieren.find(function(e) {
+            return e >= 4;
+        });
+        console.log("Find: "+finden);
+        
+        var filter = sortieren.filter(function(a) {
+            return a >= 4;
+        });
+        console.log("Filter:");
+        for(let key in filter) {
+        let value = filter[key];
+        console.log(value);
+        }
+        
+        var numbers = [65, 44, 12, 4];
+        var newarray = numbers.map(myFunction)
+
+        function myFunction(num) {
+         return num * 10;
+         }
+
+         console.log("Map:");
+         for(let key in newarray) {
+         let value = newarray[key];
+         console.log(value);
+         }
+
+         var sliceArr = numbers.slice(0, 2);
+         console.log("Slice:");
+         for(let key in sliceArr) {
+         let value = sliceArr[key];
+         console.log(value);
+         }
+
+        </script>
+
+    </body>
+</html>

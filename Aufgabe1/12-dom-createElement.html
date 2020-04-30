@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        
+        <h3>Dom-CreateElement</h3>
+
+        <div id="elem"> </div>
+    
+       
+       <script type="text/javascript"> 
+       "use strict";
+
+            var textInput = document.createElement('input');
+            textInput.setAttribute('type','input');
+            textInput.setAttribute('name', 'username');
+            textInput.setAttribute('maxlength', '80');
+
+            var _select = document.createElement('select');   
+            var _option = document.createElement('option');   
+            var _option2 = document.createElement('option');                     
+            var _t = document.createTextNode("Option1"); 
+            var _t2 = document.createTextNode("Option2"); 
+            _select.appendChild(_option);
+            _select.appendChild(_option2);                   
+            _option.appendChild(_t);  
+            _option2.appendChild(_t2);  
+
+            var _form = document.createElement('form');
+            _form.appendChild(textInput);
+            _form.appendChild(_select);
+            document.getElementById('elem').appendChild(_form);
+                                                     
+            
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        
+        <h3>Cookie</h3>
+       
+       <script type="text/javascript"> 
+       "use strict";
+        var expire = "Thu, 25 April 2021 12:00:00 UTC"
+        var counter = zaehlerstand();
+        console.log("Cookie: " + document.cookie);
+
+        function zaehlerstand () {
+        var Anzahl = wertHolen();
+        var counter = 0;
+        if (Anzahl != "") {
+            counter = parseInt(Anzahl) || 0;
+        }
+        
+        function wertHolen () {
+        var Wert = "";
+        if (document.cookie) {
+            var Wertstart = document.cookie.indexOf("=") + 1;
+            var Wertende = document.cookie.indexOf(";");
+            if (Wertende == -1) {
+            Wertende = document.cookie.length;
+            }
+            Wert = document.cookie.substring(Wertstart, Wertende);
+        }
+        return Wert;
+        }
+
+        function wertSetzen (Counter, Wert) {
+        document.cookie = Counter + "=" + Wert + "; expires=" + expire + ";";
+        }
+
+
+        counter = counter + 1;
+        wertSetzen("Counter", counter);
+        return (counter);
+        }
+
+        </script>
+
+    </body>
+</html>

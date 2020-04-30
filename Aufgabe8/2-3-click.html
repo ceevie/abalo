@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h3>click</h3>
+        <div onclick="changeColor()" id="elem" style="background-color: red; height: 30px; width: 30px;"> </div>
+        <script>
+        "use strict";
+         function changeColor() {
+            if(document.getElementById("elem").style.backgroundColor == "red") {
+                document.getElementById("elem").style.backgroundColor = "yellow";
+            }
+            else if(document.getElementById("elem").style.backgroundColor == "yellow") {
+                document.getElementById("elem").style.backgroundColor = "green";
+            }
+            else if(document.getElementById("elem").style.backgroundColor == "green") {
+                document.getElementById("elem").style.backgroundColor = "red";
+            }
+        }
+        
+        </script>
+    </body>
+</html>

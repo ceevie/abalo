@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h3>Funktionalsparameter</h3>
+       
+       <script type="text/javascript"> 
+        "use strict";
+
+        function executeFunction(fn, x, y) {
+        return fn(x, y);
+        }
+
+        let z = executeFunction(function(a, b) {
+            return a * b;
+            }, 2, 3);
+        console.log("Ergebnis= "+z);
+
+        </script>
+
+    </body>
+</html>

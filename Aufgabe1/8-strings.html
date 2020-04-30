@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <h3>Strings</h3>
+       
+       <script type="text/javascript"> 
+       "use strict";
+
+        var str = " Dies ist ein Text";
+        console.log(str);
+
+        var lengthText = str.length;
+        console.log("length: " + lengthText);
+
+        var indexOfText = str.indexOf("e");
+        console.log("indexOf(e): " + indexOfText);
+
+        var sliceText = str.slice(0, 3);
+        console.log("slice(0,3): " + sliceText);
+
+        var substrText = str.substr(3, 6);
+        console.log("substr(3,6): " + substrText);
+
+        var replaceText = str.replace("D", "Y");
+        console.log("replace(D,Y): " + replaceText);
+
+        var trimText = str.trim();
+        console.log("trimText: " + trimText);
+
+        var concatText = str.concat("Concat");
+        console.log("concatText: " + concatText);
+
+        var LowerCaseText = str.toLowerCase();
+        console.log("LowerCaseText: " + LowerCaseText);
+
+        var LowerUpperText = str.toUpperCase();
+        console.log("LowerUpperText: " + LowerUpperText);
+
+        
+        </script>
+
+    </body>
+</html>
