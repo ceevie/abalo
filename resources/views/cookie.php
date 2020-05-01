@@ -1,5 +1,4 @@
 <?php if(isset($_COOKIE['CookieHinweis']) ) {} else { ?>
-
     <div id="cookie-popup">
         <div class="cookie-popup-inner">
             <div class="hinweis">

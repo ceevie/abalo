@@ -23,3 +23,4 @@ Route::get('/logout', 'AuthController@logout')->name('logout');
 Route::get('/isloggedin', 'AuthController@isloggedin')->name('haslogin');
 
 Route::get('/articles', 'ArticleController@index');
+Route::post('/articles', 'ArticleController@create');

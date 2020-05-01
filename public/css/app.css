@@ -51,6 +51,17 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+label {
+    margin-right: 10px;
+}
+
+#aname {
+    margin-right: 10px;
+}
+
+#adescription {
+    width: 400px;
+}
 
 #cookie-popup {
   font-size: 13px;
@@ -89,6 +100,10 @@ html {
 
 .hidden {
   display: none;
+}
+
+#addArtikel>p {
+    line-height: 10px;
 }
 
 article,
@@ -353,17 +368,9 @@ textarea {
   resize: vertical;
 }
 
-fieldset {
-  min-width: 0;
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
 
 legend {
   display: block;
-  width: 100%;
-  max-width: 100%;
   padding: 0;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
