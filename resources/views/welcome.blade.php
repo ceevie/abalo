@@ -22,6 +22,7 @@
         </div>
         <div class="row" style="margin-top:20px">
             <div id="nav"></div>
+            <div id="navi"></div>
         </div>
         <div class="row" style="margin-top:20px">
             <div id="ajax"></div>
@@ -154,6 +155,61 @@
         artikeleingabeForm.appendChild(inputDescription);
         artikeleingabeForm.innerHTML += '<br>';
         artikeleingabeForm.appendChild(btn);
+
+
+        //Afugabe 10 - Navigation-neu
+
+        class Navigation {
+            constructor() {
+                this._menuepunkt = [];
+            }
+
+            addMenuepunkt(menuepunkt) {
+                this._menuepunkt.push([menuepunkt]);
+            }
+
+            setUnterpunkt(menuepunkt, untermenuepunkt1, untermenuepunkt2){
+                this._menuepunkt.push([menuepunkt, untermenuepunkt1, untermenuepunkt2]);
+            }
+
+            deleteMenuepunkt(menuepunkt) {
+                this._menuepunkt.pop();
+            }
+
+            showNavigation() {
+                var nav = document.createElement('ul');
+
+                for(let key in this._menuepunkt) {
+                    var node = document.createElement("li");
+
+                    for (let i= 0; i < this._menuepunkt[key].length; i++) {
+                        if(i == 0) {
+                            var textnode = document.createTextNode(this._menuepunkt[key][i]);
+                            node.appendChild(textnode);
+                        }
+                        else {
+                            var nav2 = document.createElement("ul");
+                            var node2 = document.createElement("li");
+                            var textnode2 = document.createTextNode(this._menuepunkt[key][i]);
+                            node2.appendChild(textnode2);
+                            nav2.appendChild(node2);
+                            node.appendChild(nav2);
+                        }
+                    }
+                    nav.appendChild(node);
+                }
+                document.getElementById("navi").appendChild(nav);
+                }
+        }
+
+        var p = new Navigation();
+        p.addMenuepunkt("Home");
+        p.addMenuepunkt("Kategorien");
+        p.addMenuepunkt("Verkaufen");
+        p.setUnterpunkt("Unternehmen", "Philosophie", "Karriere");
+        p.addMenuepunkt("weiterer Unterpunkt");
+        //p.deleteMenuepunkt("[Home]");
+        p.showNavigation();
 
     </script>
 

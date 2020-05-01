@@ -3,9 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="b2f58f49-a570-4fbd-9621-699f47da4695" name="Default Changelist" comment="l">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/cookiecheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/cookiecheck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe8/2-1-objekte.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe7/2-1-objekte.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe8/2-2-class.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe7/2-2-class.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe8/2-3-click.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe7/2-3-click.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe8/2-4-mouseover.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe7/2-4-mouseover.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe8/2-5-timeout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe7/2-5-timeout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aufgabe8/message.json" beforeDir="false" afterPath="$PROJECT_DIR$/Aufgabe7/message.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/7jUb7ItHBDFCrbZfjOpWPi4SB99pY19fxyZ9PmNH" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/BOy4nXXZUBfPDtufAYCDMvQUu08XysTAtBnSozzT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/JAaWEEHSCSbsfciMCK0Dxne1WY7ydSURlXh3Y0q1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/XDAPuhBs8jGy8emJQkeox68bAluS3rxKbPGNCUcK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/csdfBfqY1GS32NhncUbNU63qQlYktvD8Td9H8wtR" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/d7vSfKzK454tCMnfmsB8splK4z8JNJ1enLb04h7Y" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +165,7 @@
       <workItem from="1588157781924" duration="2161000" />
       <workItem from="1588257869837" duration="11000" />
       <workItem from="1588271233630" duration="17513000" />
+      <workItem from="1588342806108" duration="5947000" />
     </task>
     <servers />
   </component>
@@ -162,13 +173,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="479" y="140" key="CommitChangelistDialog2" timestamp="1588331621040">
+    <state x="351" y="134" width="1046" height="795" key="CommitChangelistDialog2" timestamp="1588348916955">
       <screen x="0" y="23" width="1792" height="1030" />
     </state>
-    <state x="479" y="140" key="CommitChangelistDialog2/0.23.1792.1030@0.23.1792.1030" timestamp="1588331621040" />
-    <state x="573" y="370" key="com.intellij.ide.util.TipDialog" timestamp="1588271234462">
+    <state x="351" y="134" width="1046" height="795" key="CommitChangelistDialog2/0.23.1792.1030@0.23.1792.1030" timestamp="1588348916955" />
+    <state x="573" y="370" key="com.intellij.ide.util.TipDialog" timestamp="1588342812681">
       <screen x="0" y="23" width="1792" height="1030" />
     </state>
-    <state x="573" y="370" key="com.intellij.ide.util.TipDialog/0.23.1792.1030@0.23.1792.1030" timestamp="1588271234462" />
+    <state x="573" y="370" key="com.intellij.ide.util.TipDialog/0.23.1792.1030@0.23.1792.1030" timestamp="1588342812681" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1588348876552">
+      <screen x="0" y="23" width="1792" height="1030" />
+    </state>
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.23.1792.1030@0.23.1792.1030" timestamp="1588348876552" />
   </component>
 </project>
