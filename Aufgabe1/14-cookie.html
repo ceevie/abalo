@@ -10,7 +10,7 @@
        
        <script type="text/javascript"> 
        "use strict";
-        var expire = "Thu, 25 April 2021 12:00:00 UTC"
+       
         var counter = zaehlerstand();
         console.log("Cookie: " + document.cookie);
 
@@ -35,11 +35,10 @@
         }
 
         function wertSetzen (Counter, Wert) {
-        document.cookie = Counter + "=" + Wert + "; expires=" + expire + ";";
+        document.cookie = Counter + "=" + Wert;
         }
 
-
-        counter = counter + 1;
+        counter++;
         wertSetzen("Counter", counter);
         return (counter);
         }

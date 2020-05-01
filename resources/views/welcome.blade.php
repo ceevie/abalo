@@ -15,7 +15,6 @@
     </head>
     <body>
     <?php include ('../resources/views/cookie.php'); ?>
-
     <div class="container">
 
         <div class="row" style="margin-top:20px">

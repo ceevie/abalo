@@ -3,16 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b2f58f49-a570-4fbd-9621-699f47da4695" name="Default Changelist" comment="l">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ArticleController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/articles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/articles.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cookie.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cookie.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/cookiecheck.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/cookiecheck.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/5oQcSBlMxkCF3NrHPQS2XFwWbelzTihrrKqfMEdJ" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/ZaUcNvFwhn6D92PenwkqS00RoiOuL6L79FgdnP3k" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/pg0atIscUCjTBBv3awe47gALh0J270dkzo7PGnS4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/z9cqEVBYAHLRrgKAA9V5R3X7tEevqfJLUyXd32E5" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +154,7 @@
       <updated>1588157778439</updated>
       <workItem from="1588157781924" duration="2161000" />
       <workItem from="1588257869837" duration="11000" />
-      <workItem from="1588271233630" duration="16814000" />
+      <workItem from="1588271233630" duration="17513000" />
     </task>
     <servers />
   </component>
