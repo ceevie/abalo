@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    {{ inputdata }} <br>
+    <div v-html="htmlvar"></div>
+</div>
+
+<script>
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            htmlvar: "<b> Vielen Dank, </b> für Ihren Einkauf bei <i> Abalo</i>"
+        }
+    })
+
+
+</script>
+
+</body>
+
+</html>

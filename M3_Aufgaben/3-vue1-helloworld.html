@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    {{ msg }} <br>
+    {{ msg.toUpperCase() }} <br>
+    {{ msg.toLowerCase() }}
+</div>
+
+<script>
+
+    let msg = {
+        msg: 'Hello World'
+    };
+
+    new Vue({
+        el: '#app',
+        data: msg
+    });
+</script>
+
+</body>
+
+</html>

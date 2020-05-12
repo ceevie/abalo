@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    {{ inputdata }} <br>
+    <input type="text" v-model="inputdata">
+</div>
+
+<script>
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            inputdata: null
+        }
+    })
+
+</script>
+
+</body>
+
+</html>

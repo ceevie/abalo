@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>If</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <div v-if="serverdown">
+        <h1> {{ msg }} </h1>
+    </div>
+
+    <button onClick="myFunction()" class="btn-primary"> Serverdown -> true</button>
+</div>
+
+<script>
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            msg: "Der Webserver ist zurzeit nicht erreichbar.",
+            serverdown: false
+        }
+    })
+
+    function myFunction() {
+        vm.$data.serverdown = true;
+    }
+
+</script>
+
+</body>
+
+</html>

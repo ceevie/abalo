@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>counter</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <p>  {{ counter }} </p>
+
+    <button onClick="myFunction()" class="btn-primary"> Inkrement</button>
+</div>
+
+<script>
+    var vm = new Vue({
+        el: "#app",
+        data: {
+            counter: 1,
+        }
+    })
+
+    function myFunction() {
+        vm.$data.counter++;
+    }
+
+</script>
+
+</body>
+
+</html>
